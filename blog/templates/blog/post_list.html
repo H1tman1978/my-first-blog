@@ -7,8 +7,14 @@
         <h1><a href="/">Anthony's Blog</a></h1>
     </header>
     <main>
-        <p>Hi there!</p>
-        <p>It works!</p>
+        <!-- Display all published posts -->
+        {% for post in posts %}
+            <div>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>published: {{ post.published_date }}</p>
+                <p>{{ post.text | linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </main>
     <footer>
         <!-- Insert Footer Here -->
