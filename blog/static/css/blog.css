@@ -1,0 +1,134 @@
+/* Style sheet created by: Anthony Rolfe, 01/05/2019 */
+
+/* Style for both html and body tags*/
+html, body {
+    height: 100%;
+}
+
+/* Style for html tags only*/
+html {
+    display: table;
+    margin: auto;
+}
+
+/* Style for body only */
+body {
+	background-color: #1761A0;
+	/*display: table-cell;
+    vertical-align: middle;*/
+}
+
+/* Style to create a fluid image */
+img {
+	max-width: 100%;
+}
+
+/* Styling for Links */
+a {
+	color: #8DCAFF;
+}
+
+a:focus {
+	color: #01233F;
+}
+
+a:visited {
+	color: #8DCAFF;
+}
+
+/* Style for the header specifies top margin, background color, rounded corners, and center align content */
+header {
+	font-family: 'Montserrat Subrayada', sans-serif;
+	color: #01233F;
+	font-size: 3em;
+	margin-top: 0.2em;
+	background-color: #1761A0;
+	border-radius: 0.5em;
+	text-align: center;
+}
+
+/* Style for nav specifies text properties */
+nav {
+	font-family: 'Righteous', cursive;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Style specifies padding and margins for unorderd list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-align: center;
+	}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation*/
+nav li {
+	background-color: #1761A0;
+	display: inline-flex;
+	border-radius: 1em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+	}
+
+/* Style for the main specifies a block display, text properties, margins, padding, rounded corners, and borders  */
+main {
+	display: block;
+	border-radius: 1em;
+	box-shadow: 1em 1em 1em #331400;
+	font-family: Georgia, "Times New Roman", sans-serif;
+	color: #01233F;
+	font-size: 1em;
+	margin-top: 0.2em;
+	padding: 0.5em;
+	border: solid 0.2em #8DCAFF;
+	/*text-align: center;*/
+}
+
+main div {
+    background: white;
+    border-radius: 1em;
+	box-shadow: .5em .5em .5em #331400;
+	margin: 1em;
+	text_align: left;
+	border: solid 0.1em #8DCAFF;
+}
+
+/* Styling for video class*/
+.video {
+	text-align: center;
+	padding: 1em;
+}
+
+/* Styling for video tag */
+video {
+	border: 0.2em solid #FF6600;
+	height: auto;
+	max-width: 100%;
+}
+
+/* Style for the footer specifies font size, text alignment, and top margin */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+/* Styling to create a Centered Table */
+.centerTable{
+	margin: 0px auto;
+}
+
+/* Formatting for input and textarea tags */
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+/* Styling for form tags */
+form {
+	text-align: left;
+	margin: auto;
+}
