@@ -1,28 +1,11 @@
-{% load static %}
-<html>
-<head>
-    <title>Anthony's Blog</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-</head>
-<body>
-    <header>
-        <h1><a href="/">Anthony's Blog</a></h1>
-    </header>
-    <main>
-        <!-- Display all published posts -->
-        {% for post in posts %}
-            <div>
-                <h2><u><a href="">{{ post.title }}</a></u></h2>
-                <p>published: {{ post.published_date }}</p>
-                <p>{{ post.text | linebreaksbr }}</p>
-            </div>
-        {% endfor %}
-    </main>
-    <footer>
-        <!-- Insert Footer Here -->
-    </footer>
+{% extends 'blog/base.html' %}
 
-</body>
-</html>
+{% block content %}
+    {% for post in posts %}
+        <div>
+            <h2><u><a href="">{{ post.title }}</a></u></h2>
+            <p>published: {{ post.published_date }}</p>
+            <p>{{ post.text | linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

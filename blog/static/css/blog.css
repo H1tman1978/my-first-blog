@@ -92,10 +92,12 @@ main div {
     border-radius: 1em;
 	box-shadow: .5em .5em .5em #331400;
 	margin: 1em;
-	text_align: left;
+	/*text_align: left;*/
 	border: solid 0.1em #8DCAFF;
 }
-
+main h2 {
+    text_align: center;
+}
 /* Styling for video class*/
 .video {
 	text-align: center;
