@@ -89,13 +89,14 @@ main {
 
 main div {
     background: white;
-    border-radius: 1em;
+    border-radius: 2em;
 	box-shadow: .5em .5em .5em #331400;
 	margin: 1em;
 	/*text_align: left;*/
 	border: solid 0.1em #8DCAFF;
 }
 main h2 {
+    color: #01233F;
     text_align: center;
 }
 /* Styling for video class*/
